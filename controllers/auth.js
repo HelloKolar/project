@@ -61,7 +61,8 @@ exports.postLogin = (req, res, next) => {
         return res.status(422).render("auth/login", {
           path: "/login",
           pageTitle: "Login",
-          errorMessage: "Invalid email or password.",
+          errorMessage:
+            "You Need To SignUp.Your Email doesn't found in Database.",
           oldInput: {
             email: email,
             password: password,
